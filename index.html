@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Manasi Bhadange — Portfolio</title>
+<meta name="description" content="Manasi Bhadange — First Year B.Tech Student | Aspiring Developer | Cloud Computing Learner" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Custom Cursor Glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- Background Layers -->
+<div class="bg-gradient"></div>
+<div class="bg-mesh"></div>
+<div class="bg-orbs">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+  <span class="orb orb-4"></span>
+</div>
+<div class="bg-particles" id="particles"></div>
+<div class="bg-flowers" id="bgFlowers"></div>
+
+<!-- Navbar -->
+<nav class="navbar glass">
+  <div class="nav-logo">M<span>B</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#journey">Journey</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certs">Certifications</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content reveal">
+    <p class="hero-greet">✦ Hello, I'm</p>
+    <h1 class="hero-name">Manasi <span class="grad-text">Bhadange</span></h1>
+    <h2 class="hero-typed">
+      <span id="typed"></span><span class="cursor">|</span>
+    </h2>
+    <p class="hero-tag">Aspiring Developer · Learning Cloud Computing &amp; Web Development</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-image reveal">
+    <div class="image-glow"></div>
+
+    <!-- Floral ring around profile -->
+    <div class="floral-ring">
+      <span class="petal-ring"></span>
+      <span class="petal-ring petal-ring-2"></span>
+      <span class="orbit-dot orbit-1"></span>
+      <span class="orbit-dot orbit-2"></span>
+      <span class="orbit-dot orbit-3"></span>
+    </div>
+
+    <!-- Floating flowers -->
+    <span class="flower flower-1">✿</span>
+    <span class="flower flower-2">❀</span>
+    <span class="flower flower-3">✾</span>
+    <span class="flower flower-4">❁</span>
+    <span class="flower flower-5">✦</span>
+    <span class="flower flower-6">❀</span>
+
+    <div class="image-card glass">
+      <img src="profile.jpeg" alt="Manasi Bhadange"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80';" />
+      <div class="image-shine"></div>
+    </div>
+    <div class="floating-tag tag-1 glass">💻 Developer</div>
+    <div class="floating-tag tag-2 glass">☁ Cloud</div>
+    <div class="floating-tag tag-3 glass">🐍 Python</div>
+  </div>
+
+  <a href="#about" class="scroll-down" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">About Me</p>
+    <h2 class="section-title">A little about <span class="grad-text">my journey</span></h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text glass reveal">
+      <p>
+        I'm a first-year B.Tech student with a deep passion for technology, design, and
+        building things that make life easier. My curiosity drives me to explore
+        <b>programming</b>, <b>cloud computing</b>, <b>data science</b>, and
+        <b>modern web design</b>.
+      </p>
+      <p>
+        I love turning ideas into elegant, functional digital experiences — and I'm
+        currently exploring <b>AI fluency</b>, <b>JavaScript</b>, and <b>data visualization</b>
+        with Tableau to build a strong, well-rounded foundation.
+      </p>
+      <p>
+        Beyond code, I enjoy <b>UI/UX design</b>, learning new tools, and growing through
+        career-focused programs that prepare me for real-world tech roles.
+      </p>
+    </div>
+
+    <div class="stats">
+      <div class="stat glass reveal">
+        <h3>1<span>st</span></h3>
+        <p>Year B.Tech</p>
+      </div>
+      <div class="stat glass reveal">
+        <h3>☁</h3>
+        <p>Cloud Learner</p>
+      </div>
+      <div class="stat glass reveal">
+        <h3>🐍</h3>
+        <p>Python Enthusiast</p>
+      </div>
+      <div class="stat glass reveal">
+        <h3>15<span>+</span></h3>
+        <p>Certifications</p>
+      </div>
+      <div class="stat glass reveal">
+        <h3>🤖</h3>
+        <p>AI Fluency Learner</p>
+      </div>
+      <div class="stat glass reveal">
+        <h3>📊</h3>
+        <p>Data Curious</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey" class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">My Journey</p>
+    <h2 class="section-title">The path so <span class="grad-text">far ✿</span></h2>
+    <p class="section-sub">Little milestones that shaped my growth as a learner, developer &amp; dreamer.</p>
+  </div>
+
+  <div class="timeline">
+    <span class="timeline-line"></span>
+
+    <div class="timeline-item left reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card glass">
+        <span class="timeline-date">2022 · School Days</span>
+        <h3>Sparked by Curiosity</h3>
+        <p>First touched code in school — instantly fell in love with the idea of building things from logic and imagination.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card glass">
+        <span class="timeline-date">2023 · Foundations</span>
+        <h3>Hello, Python 🐍</h3>
+        <p>Started learning Python seriously — earned Python Essentials 1 &amp; 2 from Cisco and built tiny scripts for fun.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item left reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card glass">
+        <span class="timeline-date">2024 · B.Tech Begins</span>
+        <h3>Stepping into Engineering</h3>
+        <p>Joined B.Tech as a first-year student. Began exploring web design, HTML, CSS and the world of UI/UX.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card glass">
+        <span class="timeline-date">2024 · Cloud &amp; Data</span>
+        <h3>Discovering the Cloud ☁</h3>
+        <p>Dived into Cloud Computing fundamentals, Tableau &amp; Python for Data Science — building a versatile skill stack.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item left reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card glass">
+        <span class="timeline-date">2025 · AI Era</span>
+        <h3>Becoming AI Fluent 🤖</h3>
+        <p>Completed multiple AI Fluency programs and Claude 101 — learning to think, design and build alongside AI.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card glass">
+        <span class="timeline-date">Now · Building</span>
+        <h3>Crafting &amp; Sharing ✦</h3>
+        <p>Designing my portfolio, exploring JavaScript, AWS and DevOps — and building toward becoming a full-stack cloud developer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills marquee -->
+<div class="marquee reveal">
+  <div class="marquee-track">
+    <span>✿ Python</span><span>❀ JavaScript</span><span>✾ HTML</span><span>❁ CSS</span>
+    <span>✦ Cloud</span><span>✿ AWS</span><span>❀ Tableau</span><span>✾ AI Fluency</span>
+    <span>❁ UI / UX</span><span>✦ Git &amp; GitHub</span><span>✿ Data Science</span><span>❀ Linux</span>
+    <span>✿ Python</span><span>❀ JavaScript</span><span>✾ HTML</span><span>❁ CSS</span>
+    <span>✦ Cloud</span><span>✿ AWS</span><span>❀ Tableau</span><span>✾ AI Fluency</span>
+    <span>❁ UI / UX</span><span>✦ Git &amp; GitHub</span><span>✿ Data Science</span><span>❀ Linux</span>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">My Skills</p>
+    <h2 class="section-title">Tools &amp; <span class="grad-text">Technologies</span></h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card glass reveal">
+      <div class="skill-icon">🐍</div>
+      <h3>Python</h3>
+      <p>Building logic, scripts &amp; small automation projects.</p>
+    </div>
+    <div class="skill-card glass reveal">
+      <div class="skill-icon">🟨</div>
+      <h3>JavaScript</h3>
+      <p>Learning the language of the modern interactive web.</p>
+    </div>
+    <div class="skill-card glass reveal">
+      <div class="skill-icon">🌐</div>
+      <h3>Web Basics</h3>
+      <p>HTML, CSS &amp; the foundations of beautiful web design.</p>
+    </div>
+    <div class="skill-card glass reveal">
+      <div class="skill-icon">☁️</div>
+      <h3>Cloud Computing</h3>
+      <p>Learning cloud fundamentals, services &amp; deployment basics.</p>
+    </div>
+    <div class="skill-card glass reveal">
+      <div class="skill-icon">📊</div>
+      <h3>Tableau</h3>
+      <p>Turning raw data into clear, insightful visual stories.</p>
+    </div>
+    <div class="skill-card glass reveal">
+      <div class="skill-icon">🤖</div>
+      <h3>AI Fluency</h3>
+      <p>Thinking, learning &amp; building responsibly with AI tools.</p>
+    </div>
+    <div class="skill-card glass reveal">
+      <div class="skill-icon">📈</div>
+      <h3>Data Science Basics</h3>
+      <p>Foundations of Python for data &amp; analytical thinking.</p>
+    </div>
+    <div class="skill-card glass reveal">
+      <div class="skill-icon">🎨</div>
+      <h3>UI / UX Interest</h3>
+      <p>Crafting clean, soft, modern interfaces with great UX.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs" class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Certifications</p>
+    <h2 class="section-title">Achievements &amp; <span class="grad-text">Learning Path</span></h2>
+  </div>
+
+  <p class="section-sub reveal">A growing collection of programs that shape my journey across programming, cloud, AI &amp; data.</p>
+
+  <div class="certs-grid">
+    <a href="M:\OneDrive\Desktop\manasi portfolio\certificates\python_essential_1.pdf" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🐍</div>
+      <h3>Python Essentials 1</h3>
+      <p>Cisco Networking Academy</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="M:\OneDrive\Desktop\manasi portfolio\certificates\python2.pdf" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🐍</div>
+      <h3>Python Essentials 2</h3>
+      <p>Cisco Networking Academy</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="#" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">☁️</div>
+      <h3>Cloud Computing</h3>
+      <p>Foundations &amp; core concepts</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="M:\OneDrive\Desktop\manasi portfolio\certificates\infosys tableau .pdf" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">📊</div>
+      <h3>Tableau</h3>
+      <p>Infosys Springboard</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="M:\OneDrive\Desktop\manasi portfolio\certificates\career management ess.pdf" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🎯</div>
+      <h3>Career Management Essentials</h3>
+      <p>Professional development program</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="M:\OneDrive\Desktop\manasi portfolio\certificates\javascript.pdf" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🟨</div>
+      <h3>Learn JavaScript</h3>
+      <p>Codecademy</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="M:\OneDrive\Desktop\manasi portfolio\certificates\al fluency nonprofits.pdf" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🤝</div>
+      <h3>AI Fluency for Nonprofits</h3>
+      <p>Responsible AI for impact</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="M:\OneDrive\Desktop\manasi portfolio\certificates\python101.jpeg" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">📈</div>
+      <h3>Python 101 for Data Science</h3>
+      <p>IBM / Cognitive Class</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="M:\OneDrive\Desktop\manasi portfolio\certificates\al framework.pdf" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🧠</div>
+      <h3>AI Fluency: Framework &amp; Foundation</h3>
+      <p>Core principles of working with AI</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="M:\OneDrive\Desktop\manasi portfolio\certificates\ai for student.pdf" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🎓</div>
+      <h3>AI Fluency for Students</h3>
+      <p>Learning &amp; thinking with AI</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="M:\OneDrive\Desktop\manasi portfolio\certificates\claude.pdf" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">✨</div>
+      <h3>Claude 101</h3>
+      <p>Anthropic — Intro to Claude</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="#" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🟧</div>
+      <h3>AWS Cloud Practitioner</h3>
+      <p>Amazon Web Services</p>
+      <span class="badge progress">In Progress</span>
+    </a>
+    <a href="#" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🐙</div>
+      <h3>Git &amp; GitHub Fundamentals</h3>
+      <p>Version control essentials</p>
+      <span class="badge done">Completed</span>
+    </a>
+    <a href="#" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🐧</div>
+      <h3>Linux Basics for Cloud</h3>
+      <p>Shell, files &amp; permissions</p>
+      <span class="badge progress">In Progress</span>
+    </a>
+    <a href="#" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">⚙️</div>
+      <h3>DevOps Fundamentals</h3>
+      <p>CI/CD &amp; modern workflows</p>
+      <span class="badge progress">In Progress</span>
+    </a>
+    <a href="#" target="_blank" rel="noopener" class="cert-card glass reveal">
+      <div class="cert-icon">🎨</div>
+      <h3>Introduction to Web Design</h3>
+      <p>Layouts, color &amp; typography</p>
+      <span class="badge done">Completed</span>
+    </a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">My Work</p>
+    <h2 class="section-title">Featured <span class="grad-text">Projects</span></h2>
+  </div>
+
+  <div class="projects-grid">
+    <article class="project-card glass reveal">
+      <div class="project-img project-1">
+        <span class="project-tag">Coming Soon</span>
+      </div>
+      <div class="project-body">
+        <h3>Cloud Portfolio Project</h3>
+        <p>A cloud-deployed portfolio showcasing AWS, hosting &amp; scalability basics.</p>
+        <div class="project-tags">
+          <span>AWS</span><span>Cloud</span><span>HTML</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card glass reveal">
+      <div class="project-img project-2">
+        <span class="project-tag">Coming Soon</span>
+      </div>
+      <div class="project-body">
+        <h3>Python Practice Projects</h3>
+        <p>A growing collection of mini Python projects — logic, automation &amp; fun scripts.</p>
+        <div class="project-tags">
+          <span>Python</span><span>Automation</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card glass reveal">
+      <div class="project-img project-3">
+        <span class="project-tag">Coming Soon</span>
+      </div>
+      <div class="project-body">
+        <h3>Web UI Showcase</h3>
+        <p>Soft, dreamy UI experiments built with HTML &amp; CSS — focused on aesthetic.</p>
+        <div class="project-tags">
+          <span>HTML</span><span>CSS</span><span>UI</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Get In Touch</p>
+    <h2 class="section-title">Let's <span class="grad-text">connect</span> ✦</h2>
+    <p class="section-sub">Open to learning, collaborations &amp; opportunities.</p>
+  </div>
+
+  <div class="contact-grid">
+    <a href="mailto:manasibhadange82@gmail.com" class="contact-card glass reveal">
+      <div class="contact-icon">✉️</div>
+      <h3>Email</h3>
+      <p>manasibhadange82@gmail.com</p>
+    </a>
+    <a href="https://www.linkedin.com/in/manasi-bhadange-2005b83b4" target="_blank" rel="noopener" class="contact-card glass reveal">
+      <div class="contact-icon">💼</div>
+      <h3>LinkedIn</h3>
+      <p>manasi-bhadange</p>
+    </a>
+    <a href="https://github.com/ManasiBhadange" target="_blank" rel="noopener" class="contact-card glass reveal">
+      <div class="contact-icon">💻</div>
+      <h3>GitHub</h3>
+      <p>ManasiBhadange</p>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer glass">
+  <p>Designed with elegance ✦ by <b>Manasi Bhadange</b></p>
+  <p class="copy">© <span id="year"></span> All rights reserved.</p>
+</footer>
+
+<script>
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile nav
+  const toggle = document.getElementById('navToggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('open');
+    toggle.classList.toggle('active');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.classList.remove('active');
+    });
+  });
+
+  // Typing animation
+  const phrases = [
+    'First Year B.Tech Student',
+    'Aspiring Developer',
+    'Cloud Computing Learner',
+    'Python Enthusiast',
+    'UI/UX Lover'
+  ];
+  const typedEl = document.getElementById('typed');
+  let pi = 0, ci = 0, deleting = false;
+  function type() {
+    const word = phrases[pi];
+    typedEl.textContent = word.substring(0, ci);
+    if (!deleting && ci < word.length) { ci++; setTimeout(type, 80); }
+    else if (deleting && ci > 0) { ci--; setTimeout(type, 40); }
+    else {
+      if (!deleting) { deleting = true; setTimeout(type, 1400); }
+      else { deleting = false; pi = (pi + 1) % phrases.length; setTimeout(type, 300); }
+    }
+  }
+  type();
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Floating particles
+  const pc = document.getElementById('particles');
+  for (let i = 0; i < 55; i++) {
+    const s = document.createElement('span');
+    s.className = 'particle';
+    s.style.left = Math.random() * 100 + '%';
+    s.style.top = Math.random() * 100 + '%';
+    s.style.animationDuration = (8 + Math.random() * 14) + 's';
+    s.style.animationDelay = (Math.random() * 10) + 's';
+    s.style.width = s.style.height = (2 + Math.random() * 6) + 'px';
+    pc.appendChild(s);
+  }
+
+  // Background floating flowers
+  const bf = document.getElementById('bgFlowers');
+  const glyphs = ['✿','❀','✾','❁','✦','❃'];
+  for (let i = 0; i < 18; i++) {
+    const f = document.createElement('span');
+    f.className = 'bg-flower';
+    f.textContent = glyphs[Math.floor(Math.random() * glyphs.length)];
+    f.style.left = Math.random() * 100 + '%';
+    f.style.top = Math.random() * 100 + '%';
+    f.style.fontSize = (14 + Math.random() * 28) + 'px';
+    f.style.animationDuration = (16 + Math.random() * 18) + 's';
+    f.style.animationDelay = (Math.random() * 10) + 's';
+    bf.appendChild(f);
+  }
+
+  // Custom cursor glow
+  const cg = document.getElementById('cursorGlow');
+  let mx = window.innerWidth / 2, my = window.innerHeight / 2;
+  let cx = mx, cy = my;
+  window.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; });
+  function loop() {
+    cx += (mx - cx) * 0.15;
+    cy += (my - cy) * 0.15;
+    cg.style.transform = `translate(${cx}px, ${cy}px) translate(-50%, -50%)`;
+    requestAnimationFrame(loop);
+  }
+  loop();
+
+  // 3D tilt on cards
+  const tiltCards = document.querySelectorAll('.skill-card, .cert-card, .project-card, .contact-card');
+  tiltCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = `perspective(900px) rotateY(${x * 7}deg) rotateX(${-y * 7}deg) translateY(-6px)`;
+    });
+    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+  });
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navAnchors = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY + 120;
+    sections.forEach(sec => {
+      if (y >= sec.offsetTop && y < sec.offsetTop + sec.offsetHeight) {
+        navAnchors.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + sec.id));
+      }
+    });
+  });
+
+  // Navbar shadow on scroll
+  const nav = document.querySelector('.navbar');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 30);
+  });
+</script>
+
+</body>
+</html>
